@@ -5,16 +5,16 @@ function ProjectCard() {
 	const [hover, setHover] = useState(false);
 
 	function handleOnMouseOver() {
-		setHover(true);
+		return setHover(true);
 
 	}
 	function handleOnMouseOut() {
-		setHover(false);
+		return setHover(false);
 	}
 	return (
 		<div className="w-1/4 p-4" onMouseOver={handleOnMouseOver} onMouseOut={handleOnMouseOut}>
-			<div className="cursor-pointer shadow-md bg-white rounded-sm h-full w-full">
-				<Link to="/projects/1">
+			<Link to="/projects/1/intro">
+				<div className="cursor-pointer shadow-md bg-white rounded-sm h-full w-full">
 					{
 						hover
 							? <div className="h-48 w-full p-6">
@@ -26,8 +26,8 @@ function ProjectCard() {
 
 					}
 					<h3 className="ml-6">TPP</h3>
-				</Link>
-			</div>
+				</div>
+			</Link>
 		</div>
 	);
 }

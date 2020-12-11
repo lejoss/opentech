@@ -14,7 +14,7 @@ function App() {
         <Route component={() => <h1>home</h1>} exact path="/" />
         <Route component={() => <h1>people</h1>} path="/people" />
         <Route component={ProjectView} exact path="/projects" />
-        <Route component={ProjectDetail} exact path="/projects/:projectId" />
+        <Route component={ProjectDetail} path="/projects/:projectId" />
         <Route component={() => <h1>contacts</h1>} exact path="/contact" />
       </Switch>
     </div>

@@ -3,28 +3,27 @@ import { Switch, Link, Route, useRouteMatch, useParams } from 'react-router-dom'
 
 function Introduction() {
 	return (
-		<div>
-			<div className="mb-4">
-				<p className="text-center">The Traveling Purchaser Problem (TPP) considers a set of products to be purchased and a set
-					of
-					markets that
-					offer the products at different prices. The objective is to find a tour that minimizes the cost of buying all
-					the
-					products and the cost of visiting the selected markets. Formally, consider a depot , a set of markets, and a
-					set
-					of products. The TPP can be defined on a graph where the set of nodes includes the depot and the markets
-					(i.e.,),
-					and the set of arcs defines a complete graph (i.e., ). Parameter is the price of buying product from market ,
-					where as denotes the transportation cost between nodes and . The TPP can be classNameified into symmetric or
-					asymmetric depending on the structure of the distance matrix (i.e., whether ). Additionally, the TPP can be
-					classNameified as unrestricted when individual markets are assumed to sufficethe demand of products. The opposite
-					case, known as the restricted TPP, implies that several markets may have to be visited to comply with demand
-					constraints. In this paper, we focus on the Unrestricted Asymmetric Traveling Purchaser Problem (UATPP) and the
+		<div className="md:p-8">
+			<img className="md:h-48 md:float-right" src="/images/tpp.jpeg" alt="tpp" />
+			<p className="mb-4 text-center md:text-left ">The Traveling Purchaser Problem (TPP) considers a set of products to be purchased and a set
+				of
+				markets that
+				offer the products at different prices. The objective is to find a tour that minimizes the cost of buying all
+				the
+				products and the cost of visiting the selected markets. Formally, consider a depot , a set of markets, and a
+				set
+				of products. The TPP can be defined on a graph where the set of nodes includes the depot and the markets
+				(i.e.,),
+				and the set of arcs defines a complete graph (i.e., ). Parameter is the price of buying product from market ,
+				where as denotes the transportation cost between nodes and . The TPP can be classNameified into symmetric or
+				asymmetric depending on the structure of the distance matrix (i.e., whether ). Additionally, the TPP can be
+				classNameified as unrestricted when individual markets are assumed to sufficethe demand of products. The opposite
+				case, known as the restricted TPP, implies that several markets may have to be visited to comply with demand
+				constraints. In this paper, we focus on the Unrestricted Asymmetric Traveling Purchaser Problem (UATPP) and the
 							Unrestricted Symmetric Traveling Purchaser Problem (USTPP).</p>
-			</div>
-			<img src="/images/tpp.jpeg" alt="tpp" />
 
 		</div>
+
 	)
 }
 
@@ -44,7 +43,7 @@ function ProjectDetail() {
 
 	return (
 		<main>
-			<section className="pt-20">
+			<section className="h-full pt-20">
 				<article className="bg-white shadow-sm rounded-md p-8">
 					<p className="text-center text-3xl text-gray-700">Traveling Purchased Problem</p>
 					<hr className="mt-4 mb-8" />

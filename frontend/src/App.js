@@ -8,7 +8,7 @@ import {
 
 function App() {
   return (
-    <div className="container h-full">
+    <div className="container h-full min-w-full md:h-screen">
       <Header />
       <Switch>
         <Route component={() => <h1>home</h1>} exact path="/" />

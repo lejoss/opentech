@@ -12,7 +12,7 @@ function ProjectCard() {
 		return setHover(false);
 	}
 	return (
-		<div className="md:w-1/4 mb-6" onMouseOver={handleOnMouseOver} onMouseOut={handleOnMouseOut}>
+		<div className="md:w-1/4 pb-4 sm:pb-0 sm:m-4" onMouseOver={handleOnMouseOver} onMouseOut={handleOnMouseOut}>
 			<Link to="/projects/1/intro">
 				<div className="cursor-pointer shadow-md bg-white rounded-lg">
 					{

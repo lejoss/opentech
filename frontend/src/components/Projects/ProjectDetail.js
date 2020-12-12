@@ -3,9 +3,9 @@ import { Switch, Link, Route, useRouteMatch, useParams } from 'react-router-dom'
 
 function Introduction() {
 	return (
-		<div className="flex flex-row">
-			<div className="w-3/5">
-				<p>The Traveling Purchaser Problem (TPP) considers a set of products to be purchased and a set
+		<div>
+			<div className="mb-4">
+				<p className="text-center">The Traveling Purchaser Problem (TPP) considers a set of products to be purchased and a set
 					of
 					markets that
 					offer the products at different prices. The objective is to find a tour that minimizes the cost of buying all
@@ -22,10 +22,8 @@ function Introduction() {
 					constraints. In this paper, we focus on the Unrestricted Asymmetric Traveling Purchaser Problem (UATPP) and the
 							Unrestricted Symmetric Traveling Purchaser Problem (USTPP).</p>
 			</div>
+			<img src="/images/tpp.jpeg" alt="tpp" />
 
-			<div className="w-2/5">
-				<img src="/images/tpp.jpeg" alt="tpp" />
-			</div>
 		</div>
 	)
 }
@@ -45,19 +43,19 @@ function ProjectDetail() {
 	// let { projectId } = useParams();
 
 	return (
-		<main className="flex-1">
-			<section className="h-full mx-16 mt-8">
+		<main>
+			<section className="pt-20">
 				<article className="bg-white shadow-sm rounded-md p-8">
-					<p className="text-center text-3xl text-gray-700 mb-4">Traveling Purchased Problem</p>
-					<hr className="mb-8" />
+					<p className="text-center text-3xl text-gray-700">Traveling Purchased Problem</p>
+					<hr className="mt-4 mb-8" />
 
-					<nav className="flex flex-row mb-8 bg-gray-100 rounded-md">
-						<Link to={`${url}/intro`} className="text-center cursor-pointer text-lg flex-1 bg-gray-200 p-5 underline rounded-l-md">Introduction</Link>
-						<Link to={`${url}/desc`} className="text-center cursor-pointer text-lg flex-1 p-5 underline hover:bg-gray-300 ">Problem Description</Link>
-						<Link to={`${url}/res`} className="text-center cursor-pointer text-lg flex-1 p-5 underline hover:bg-gray-300 rounded-r-md">Results</Link>
+					<nav className="flex justify-center mb-8">
+						<Link to={`${url}/intro`} className="cursor-pointer text-gray-700 text-md rounded-md m-1 bg-gray-300 p-3">Introduction</Link>
+						<Link to={`${url}/desc`} className="cursor-pointer text-gray-700 text-md rounded-md m-1 bg-gray-300 p-3">Description</Link>
+						<Link to={`${url}/res`} className="cursor-pointer text-gray-700 text-md rounded-md m-1 bg-gray-300 p-3">Results</Link>
 					</nav>
 
-					<p className="text-gray-700 font-bold mb-4">Traveling Purchaser Problem</p>
+					<p className="text-center text-gray-700 font-bold mb-4">Traveling Purchaser Problem</p>
 					<Switch>
 						<Route path="/projects/1/intro" component={Introduction} />
 						<Route path="/projects/1/desc" component={Description} />

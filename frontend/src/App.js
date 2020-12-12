@@ -8,11 +8,11 @@ import {
 
 function App() {
   return (
-    <div className="container bg-gray-200">
+    <div className="container h-full">
       <Header />
       <Switch>
         <Route component={() => <h1>home</h1>} exact path="/" />
-        <Route component={() => <h1>people</h1>} path="/people" />
+        <Route component={() => <h1>people</h1>} exact path="/people" />
         <Route component={ProjectView} exact path="/projects" />
         <Route component={ProjectDetail} path="/projects/:projectId" />
         <Route component={() => <h1>contacts</h1>} exact path="/contact" />

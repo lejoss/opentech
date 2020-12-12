@@ -12,17 +12,17 @@ function ProjectCard() {
 		return setHover(false);
 	}
 	return (
-		<div className="w-1/4 p-4" onMouseOver={handleOnMouseOver} onMouseOut={handleOnMouseOut}>
+		<div className="md:w-1/4 mb-6" onMouseOver={handleOnMouseOver} onMouseOut={handleOnMouseOut}>
 			<Link to="/projects/1/intro">
-				<div className="cursor-pointer shadow-md bg-white rounded-sm h-full w-full">
+				<div className="cursor-pointer shadow-md bg-white rounded-lg">
 					{
 						hover
-							? <div className="h-48 w-full p-6">
+							? <div className="h-48 p-6">
 								<h3 >Transport Problem</h3>
 								<p >The Traveling Purchaser Problem (TPP) considers a set of products to be purchased and a set
 								of markets that ...</p>
 							</div>
-							: <img className="h-48 w-full p-6" src="/images/tpp.jpeg" alt="tpp" />
+							: <img className="w-full h-48 p-6" src="/images/tpp.jpeg" alt="tpp" />
 
 					}
 					<h3 className="ml-6">TPP</h3>

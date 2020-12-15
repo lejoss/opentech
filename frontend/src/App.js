@@ -1,5 +1,5 @@
 import Header from './components/Header/Header';
-import ProjectView from './components/Projects/ProjectView';
+import ProjectsView from './components/Projects/ProjectsView';
 import ProjectDetail from './components/Projects/ProjectDetail';
 import {
   Switch,
@@ -13,7 +13,7 @@ function App() {
       <Switch>
         <Route component={() => <h1>home</h1>} exact path="/" />
         <Route component={() => <h1>people</h1>} exact path="/people" />
-        <Route component={ProjectView} exact path="/projects" />
+        <Route component={ProjectsView} exact path="/projects" />
         <Route component={ProjectDetail} path="/projects/:projectId" />
         <Route component={() => <h1>contacts</h1>} exact path="/contact" />
       </Switch>

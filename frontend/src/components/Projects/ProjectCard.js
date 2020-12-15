@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+
 function ProjectCard() {
 	const [hover, setHover] = useState(false);
 
@@ -12,23 +13,23 @@ function ProjectCard() {
 		return setHover(false);
 	}
 	return (
-		<div className="md:w-1/5 pb-4 sm:pb-0 sm:m-4" onMouseOver={handleOnMouseOver} onMouseOut={handleOnMouseOut}>
+		<figure className="m-2 sm:w-56 fig" onMouseOver={handleOnMouseOver} onMouseOut={handleOnMouseOut}>
 			<Link to="/projects/1/intro">
-				<div className="cursor-pointer shadow-md bg-white rounded-lg">
+				<div className="cursor-pointer shadow-sm rounded-md m-0">
 					{
 						hover
-							? <div className="h-48 p-6">
-								<h3 >Transport Problem</h3>
-								<p >The Traveling Purchaser Problem (TPP) considers a set of products to be purchased and a set
-								of markets that ...</p>
-							</div>
-							: <img className="w-full h-48 p-6" src="/images/tpp.jpeg" alt="tpp" />
+							? <dl className="h-48 p-6">
+								<dt>Transport Problem</dt>
+								<dd>The Traveling Purchaser Problem (TPP) considers a set of products to be purchased and a set
+								of markets that ...</dd>
+							</dl>
+							: <img className="sm:w-56 h-auto" src="/images/tpp.jpeg" alt="tpp" />
 
 					}
 					<h3 className="ml-6">TPP</h3>
 				</div>
 			</Link>
-		</div>
+		</figure>
 	);
 }
 

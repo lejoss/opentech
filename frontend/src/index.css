@@ -4,5 +4,9 @@
 
 body {
 	color: #1a202c;
-	background-color: #f7fafc;
+	background-color: #eee;
+}
+
+nav {
+	background-color: #212121;
 }

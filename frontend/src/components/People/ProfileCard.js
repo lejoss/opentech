@@ -25,7 +25,7 @@ function ProfileCard() {
 			</div>
 			<br />
 			<div className="flex justify-end mb-2 mr-2">
-				<Link to="/projects/1/intro" className="bg-gray-900 rounded p-2 shadow-md">
+				<Link to="/projects?person=david" className="bg-gray-900 rounded p-2 shadow-md">
 					<p className="leading-relaxed tracking-wide text-xs uppercase text-gray-100 hover:text-gray-500 font-medium">PROJECTS</p>
 				</Link>
 			</div>

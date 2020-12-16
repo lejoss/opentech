@@ -16,7 +16,7 @@ function App() {
         <Route component={() => <h1>home</h1>} exact path="/" />
         <Route component={PeopleView} exact path="/people" />
         <Route component={ProjectsView} exact path="/projects" />
-        <Route component={ProjectDetail} path="/projects/:projectId" />
+        <Route component={ProjectDetail} path="/projects/:projectId/intro" />
         <Route component={() => <h1>contacts</h1>} exact path="/contact" />
       </Switch>
     </div>

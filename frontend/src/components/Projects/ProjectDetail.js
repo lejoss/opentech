@@ -48,7 +48,7 @@ function ProjectDetail() {
 
 	return (
 		<main className="overflow-auto">
-			<section className="my-20 mx-2 sm:mx-6 md:mx-10 lg:mx-32 2xl:mx-64">
+			<section className="my-20 mx-6 sm:mx-6 md:mx-10 lg:mx-32 2xl:mx-64">
 				<article className="">
 					<p className="text-5xl text-gray-900 md:mt-40">Traveling Purchased Problem</p>
 					<Introduction />

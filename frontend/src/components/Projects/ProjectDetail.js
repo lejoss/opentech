@@ -50,7 +50,7 @@ function ProjectDetail() {
 		<main className="overflow-auto">
 			<section className="my-20 mx-6 sm:mx-6 md:mx-10 lg:mx-32 2xl:mx-64">
 				<article className="">
-					<p className="text-5xl text-gray-900 md:mt-40 mb-1">Traveling Purchased Problem</p>
+					<p className="text-5xl md:mt-40 mb-1">Traveling Purchased Problem</p>
 					<p className="mx-1 italic leading-relaxed font-light text-xs text-gray-700 mb-6">
 						This Web site is intended to be served as a supplement to the paper submitted:
 	Cuellar-Usaquen D, Gomez C and Álvarez-Martínez, D. A GRASP/Path-Relinking Algorithm for the Traveling PurchaserProblem

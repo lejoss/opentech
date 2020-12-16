@@ -10,3 +10,17 @@ body {
 nav {
 	background-color: #212121;
 }
+
+.profile-card {
+	max-width: 240px; 
+	min-width: 240px;
+	min-height: 420px;
+	 max-height: 420px;
+}
+
+.project-card {
+	max-width: 240px; 
+	min-width: 240px;
+	min-height: 420px;
+	 max-height: 420px;
+}

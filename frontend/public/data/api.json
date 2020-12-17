@@ -4,18 +4,18 @@
 		"title": "Our Team",
 		"list": [
 			{
-				"personId": 1,
+				"id": 1,
 				"name": "David Alvarez",
 				"jobTitle": "Assistant Professor",
 				"phone": "+57312345656",
 				"email": "akavallo@gmail.com",
 				"img": "/images/dave.png",
 				"projects": [
-					1
+					1, 2
 				]
 			},
 			{
-				"personId": 2,
+				"id": 2,
 				"name": "Camilo Gomez",
 				"jobTitle": "Assistant Professor",
 				"phone": "+57311345556",
@@ -26,7 +26,7 @@
 				]
 			},
 			{
-				"personId": 3,
+				"id": 3,
 				"name": "Daniel Cuellar",
 				"jobTitle": "Phd Student",
 				"phone": "+57313335656",
@@ -37,7 +37,7 @@
 				]
 			},
 			{
-				"personId": 4,
+				"id": 4,
 				"name": "Alejandro Baez",
 				"jobTitle": "Software Engineer",
 				"phone": "+573135464402",
@@ -51,14 +51,14 @@
 		"title": "Projects",
 		"list": [
 			{
-				"projectId": 1,
+				"id": 1,
 				"title": "Traveling Purchaser Problem",
 				"description": "(TPP) considers a set of products to be purchased and a set of markets that offer the products at different prices.",
 				"img": "/images/tpp.jpeg",
 				"type": "routing"
 			},
 			{
-				"projectId": 2,
+				"id": 2,
 				"title": "Traveling Purchaser Problem 2",
 				"description": "(TPP) considers a set of products to be purchased and a set of markets that offer the products at different prices.",
 				"img": "/images/tpp2.jpg",

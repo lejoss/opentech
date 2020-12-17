@@ -2,12 +2,11 @@ import React, { useEffect, useState } from 'react';
 import Header from './components/Header/Header';
 import ProjectsView from './components/Projects/ProjectsView';
 import ProjectDetail from './components/Projects/ProjectDetail';
-import PeopleDetail from './components/People/PeopleView';
+import PeopleView from './components/People/PeopleView';
 import {
   Switch,
   Route,
 } from "react-router-dom";
-import PeopleView from './components/People/PeopleView';
 
 function App() {
   let [state, setState] = useState({});
@@ -17,9 +16,8 @@ function App() {
       .then(response => response.json())
       .then(data => setState(data));
 
-      console.log(state)
-
   }, [])
+
   return (
     <div className="container min-h-full min-w-full">
       <Header />
@@ -29,7 +27,7 @@ function App() {
           <PeopleView people={state.people} />
         </Route>
         <Route exact path="/projects">
-          <ProjectsView projects={state.projects} />
+          <ProjectsView projects={state.projects} people={state.people} />
         </Route>
         <Route path="/projects/:projectId/intro">
           <ProjectDetail />

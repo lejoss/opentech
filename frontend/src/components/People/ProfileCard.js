@@ -24,7 +24,7 @@ function ProfileCard({ person }) {
 				</div>
 			</div>
 
-			<Link to="/projects?person=david" style={{ backgroundColor: '#212121' }} className="flex justify-center rounded p-2 shadow-md cursor-pointer">
+			<Link to={`/projects?person=${person.id}`} style={{ backgroundColor: '#212121' }} className="flex justify-center rounded p-2 shadow-md cursor-pointer">
 				<p className="leading-relaxed tracking-wide text-xs uppercase text-white hover:text-gray-300 font-medium">Projects</p>
 			</Link>
 

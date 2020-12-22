@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function ProfileCard({ person }) {
 	return (
 		<figure className="flex flex-col profile-card m-1 py-6 px-4 bg-white sm:w-72 shadow-md rounded-md">
-			<img className="my-0 mx-auto w-24 h-24 rounded-full" src={person.img} alt="tpp" />
+			<img className="my-0 mx-auto w-24 h-24 rounded-full" src={person.img || '/images/user.svg'} alt="tpp" />
 			<p className="text-center leading-relaxed tracking-wide text-2xl mt-4">{person.name}</p>
 			<p className="text-center leading-relaxed tracking-wide mb-8 text-xs text-gray-600 font-light">{person.jobTitle}</p>
 

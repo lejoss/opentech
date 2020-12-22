@@ -8,15 +8,30 @@ import {
   Route,
 } from "react-router-dom";
 
+const initialState = {
+  home: {},
+  people: {},
+  projects: {},
+  contact: {},
+};
+
 function App() {
-  let [state, setState] = useState({});
+  let [state, setState] = useState(() => {
+    return JSON.parse(localStorage.getItem('app')) || initialState;
+  });
 
   useEffect(() => {
     fetch('data/api.json')
       .then(response => response.json())
-      .then(data => setState(data));
-
+      .then(data => {
+        setState(data);
+        localStorage.setItem('app', JSON.stringify(data));
+      });
   }, [])
+
+  // useEffect(() => {
+  //   localStorage.setItem('app', state);
+  // }, [state])
 
   return (
     <div className="container min-h-full min-w-full">

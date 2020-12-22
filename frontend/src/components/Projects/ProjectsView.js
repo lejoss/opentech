@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import ProjectCard from './ProjectCard';
 import useQuery from '../../hooks/useQuery';
+import { mapToKeys } from '../../services';
 
 function ProjectsView({ projects, people }) {
 	const query = useQuery();
@@ -41,15 +42,6 @@ function ProjectsView({ projects, people }) {
 			)}
 		</main>
 	);
-}
-
-function mapToKeys(arr = []) {
-	return arr.reduce((prev, current, index, array) => {
-		return {
-			...prev,
-			[current.id]: array[index]
-		}
-	}, {});
 }
 
 ProjectsView.propTypes = {

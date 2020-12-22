@@ -20,8 +20,6 @@ function Introduction() {
 			classNameified as unrestricted when individual markets are assumed to sufficethe demand of products. </p>
 
 
-
-
 			<p className="leading-relaxed font-light mb-4">The opposite
 			case, known as the restricted TPP, implies that several markets may have to be visited to comply with demand
 			constraints. In this paper, we focus on the Unrestricted Asymmetric Traveling Purchaser Problem (UATPP) and the
@@ -42,9 +40,12 @@ function Results() {
 };
 
 
-function ProjectDetail() {
+function ProjectDetail({ projects }) {
 	let { path, url } = useRouteMatch();
-	// let { projectId } = useParams();
+	let { projectId } = useParams();
+	const projectDetail = projects[projectId] || {};
+
+	console.log('project detail', projectDetail);
 
 	return (
 		<main className="overflow-auto">

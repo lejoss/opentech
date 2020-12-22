@@ -7,6 +7,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import { mapToKeys } from './services';
 
 const initialState = {
   home: {},
@@ -15,10 +16,10 @@ const initialState = {
   contact: {},
 };
 
+const initializeApp = () => JSON.parse(localStorage.getItem('app')) || initialState;
+
 function App() {
-  let [state, setState] = useState(() => {
-    return JSON.parse(localStorage.getItem('app')) || initialState;
-  });
+  let [state, setState] = useState(initializeApp);
 
   useEffect(() => {
     fetch('data/api.json')
@@ -45,12 +46,13 @@ function App() {
           <ProjectsView projects={state.projects} people={state.people} />
         </Route>
         <Route path="/projects/:projectId/intro">
-          <ProjectDetail />
+          <ProjectDetail projects={mapToKeys(state.projects.list) || {}} />
         </Route>
         <Route component={() => <h1>contacts</h1>} exact path="/contact" />
       </Switch>
     </div>
   );
 }
+
 
 export default App;

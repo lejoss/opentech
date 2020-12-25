@@ -45,8 +45,6 @@ function ProjectDetail({ projects }) {
 	let { projectId } = useParams();
 	const projectDetail = projects[projectId] || {};
 
-	console.log('project detail', projectDetail);
-
 	return (
 		<main className="overflow-auto">
 			<section className="my-20 mx-6 sm:mx-6 md:mx-10 lg:mx-32 2xl:mx-64">

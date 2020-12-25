@@ -11,7 +11,8 @@
 				"email": "akavallo@gmail.com",
 				"img": "/images/dave.png",
 				"projects": [
-					1, 2
+					1,
+					2
 				]
 			},
 			{
@@ -63,6 +64,27 @@
 				"description": "(TPP) considers a set of products to be purchased and a set of markets that offer the products at different prices.",
 				"img": "/images/tpp2.jpg",
 				"type": "packing"
+			},
+			{
+				"id": 3,
+				"title": "Traveling Purchaser Problem 3",
+				"description": "(TPP) considers a set of products to be purchased and a set of markets that offer the products at different prices.",
+				"img": "/images/tpp2.jpg",
+				"type": "packing"
+			},
+			{
+				"id": 4,
+				"title": "Traveling Purchaser Problem 4",
+				"description": "(TPP) considers a set of products to be purchased and a set of markets that offer the products at different prices.",
+				"img": "/images/tpp2.jpg",
+				"type": "packing"
+			},
+			{
+				"id": 5,
+				"title": "Traveling Purchaser Problem 5",
+				"description": "(TPP) considers a set of products to be purchased and a set of markets that offer the products at different prices.",
+				"img": "/images/tpp2.jpg",
+				"type": "routing"
 			}
 		]
 	},

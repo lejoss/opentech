@@ -58,7 +58,7 @@ function Header() {
   return (
     <nav className="fixed h-20 w-full shadow-lg">
       <div className="max-w-7xl h-full mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="h-full flex items-center justify-center sm:justify-end ">
+        <div className="h-full flex items-center justify-center lg:justify-end ">
           <div className="md:ml-10 flex items-baseline space-x-4">
             {navLinks.map(({ path, name, active }, index) => (
               <Link key={path} onMouseOver={() => onHoverLink(index)} onMouseOut={() => onHoverLink(index)} to={path} className="relative leading-relaxed capitalize text-gray-100 hover:text-gray-400 px-3 py-2 text-md font-light">

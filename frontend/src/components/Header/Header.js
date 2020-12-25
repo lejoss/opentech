@@ -55,8 +55,6 @@ function Header() {
     }));
   }
 
-
-
   return (
     <nav className="fixed h-20 w-full shadow-lg">
       <div className="max-w-7xl h-full mx-auto px-4 sm:px-6 lg:px-12">

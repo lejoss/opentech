@@ -16,7 +16,9 @@ const initialState = {
   contact: {},
 };
 
-const initializeApp = () => JSON.parse(localStorage.getItem('app')) || initialState;
+function initializeApp() {
+  return JSON.parse(localStorage.getItem('app')) || initialState;
+}
 
 function App() {
   let [state, setState] = useState(initializeApp);

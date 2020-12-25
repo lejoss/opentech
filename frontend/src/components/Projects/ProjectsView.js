@@ -11,7 +11,7 @@ function ProjectsView({ projects, people }) {
 	if (query.get("person") && people.list && people.list.length > 0) {
 		const peopleMap = mapToKeys(people.list);
 		const projectIdsByPerson = peopleMap[query.get("person")].projects || [];
-		const projectsByPerson = projects.list && projects.list.filter(p => projectIdsByPerson.some(projectId => projectId === p.id));
+		const projectsByPerson = projects.list.filter(p => projectIdsByPerson.some(projectId => projectId === p.id));
 
 		routingProjects = projectsByPerson && projectsByPerson.filter(p => p.type === 'routing');
 		packingProjects = projectsByPerson && projectsByPerson.filter(p => p.type === 'packing');

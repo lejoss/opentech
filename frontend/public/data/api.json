@@ -85,6 +85,13 @@
 				"description": "(TPP) considers a set of products to be purchased and a set of markets that offer the products at different prices.",
 				"img": "/images/tpp2.jpg",
 				"type": "routing"
+			},
+			{
+				"id": 6,
+				"title": "Traveling Purchaser Problem 6",
+				"description": "(TPP) considers a set of products to be purchased and a set of markets that offer the products at different prices.",
+				"img": "/images/tpp2.jpg",
+				"type": "packing"
 			}
 		]
 	},

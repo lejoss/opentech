@@ -25,17 +25,17 @@ function ProjectsView({ projects, people }) {
 		<main id="projects-view" className="overflow-auto">
 			{routingProjects.length > 0 && (
 				<div className="md:mb-8">
-					<p className="text-center text-5xl mt-32 md:mx-10 md:mb-6 lg:text-left lg:mx-32 mb-2">Routing</p>
-					<section id="routing-projects" className="flex flex-col justify-center mx-6 mb-4 sm:my-0 sm:mx-6 sm:flex-row sm:flex-wrap md:mx-10 lg:mx-32 2xl:mx-64">
+					<p className="text-center text-5xl mt-32 md:mx-10 md:mb-6 lg:text-left lg:mx-24 mb-2">Routing</p>
+					<section id="routing-projects" className="flex flex-col justify-center lg:justify-start mx-6 mb-4 sm:my-0 sm:mx-6 sm:flex-row sm:flex-wrap md:mx-10 lg:mx-24 2xl:mx-64">
 						{routingProjects.map(p => <ProjectCard key={p.id} project={p} />)}
 					</section>
 				</div>
 			)}
 
 			{packingProjects.length > 0 && (
-				<div>
-					<p className="text-center text-5xl md:mx-10 md:mb-6 lg:text-left lg:mx-32 mb-2">Packing</p>
-					<section id="packing-projects" className="flex flex-col justify-center mx-6 mb-4 sm:my-0 sm:mx-6 sm:flex-row sm:flex-wrap md:mx-10 lg:mx-32 2xl:mx-64">
+				<div className="lg:mb-12">
+					<p className="text-center text-5xl md:mx-10 md:mb-6 lg:text-left lg:mx-24 mb-2">Packing</p>
+					<section id="packing-projects" className="flex flex-col justify-center lg:justify-start mx-6 mb-4 sm:my-0 sm:mx-6 sm:flex-row sm:flex-wrap md:mx-10 lg:mx-24 2xl:mx-64">
 						{packingProjects.map(p => <ProjectCard key={p.id} project={p} />)}
 					</section>
 				</div>

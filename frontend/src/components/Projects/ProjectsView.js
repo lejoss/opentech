@@ -22,10 +22,10 @@ function ProjectsView({ projects, people }) {
 	}
 
 	return (
-		<main id="projects-view" className="overflow-auto">
+		<main id="projects-view" className="overflow-auto h-screen">
 			{routingProjects.length > 0 && (
-				<div className="md:mb-8">
-					<p className="text-center text-5xl mt-32 md:mx-10 md:mb-6 lg:text-left lg:mx-24 mb-2">Routing</p>
+				<div className="h-full">
+					<p className="text-center text-5xl mt-40 md:mx-10 md:mb-6 lg:text-left lg:mx-24 mb-2">Routing Projects</p>
 					<section id="routing-projects" className="flex flex-col justify-center lg:justify-start mx-6 mb-4 sm:my-0 sm:mx-6 sm:flex-row sm:flex-wrap md:mx-10 lg:mx-24 2xl:mx-64">
 						{routingProjects.map(p => <ProjectCard key={p.id} project={p} />)}
 					</section>
@@ -33,8 +33,8 @@ function ProjectsView({ projects, people }) {
 			)}
 
 			{packingProjects.length > 0 && (
-				<div className="lg:mb-12">
-					<p className="text-center text-5xl md:mx-10 md:mb-6 lg:text-left lg:mx-24 mb-2">Packing</p>
+				<div className="h-full">
+					<p className="text-center text-5xl md:mx-10 md:mb-6 lg:text-left lg:mx-24 mb-2">Packing Projects</p>
 					<section id="packing-projects" className="flex flex-col justify-center lg:justify-start mx-6 mb-4 sm:my-0 sm:mx-6 sm:flex-row sm:flex-wrap md:mx-10 lg:mx-24 2xl:mx-64">
 						{packingProjects.map(p => <ProjectCard key={p.id} project={p} />)}
 					</section>

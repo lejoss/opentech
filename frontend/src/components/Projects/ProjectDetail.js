@@ -57,6 +57,61 @@ function ProjectDetail({ projects }) {
 					</p>
 
 					<Introduction />
+					<br />
+					<table className="table-fixed bg-white shadow-sm rounded-md w-full">
+						<thead className="border-b">
+							<tr>
+								<th className="w-1/2 p-4">Alternative GRASP ID</th>
+								<th className="w-1/2 p-4 text-left">Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr className="border-b hover:bg-gray-100">
+								<td className="text-center p-4">1</td>
+								<td>GRASP\PR - (P) - TotalIter = 2500</td>
+							</tr>
+							<tr className="border-b hover:bg-gray-100">
+								<td className="text-center p-4">2</td>
+								<td>GRASP\PR - (R) - TotalIter = 2500</td>
+							</tr>
+							<tr className="border-b hover:bg-gray-100">
+								<td className="text-center p-4">3</td>
+								<td>GRASP\PR - (P) - TotalIter = 4500</td>
+							</tr>
+							<tr className="border-b hover:bg-gray-100">
+								<td className="text-center p-4">4</td>
+								<td>GRASP\PR - (R) - TotalIter = 4500</td>
+							</tr>
+							<tr className="border-b hover:bg-gray-100">
+								<td className="text-center p-4">5</td>
+								<td>GRASP\PR - (P&R) - TotalIter = 4500</td>
+							</tr>
+							<tr className="border-b hover:bg-gray-100">
+								<td className="text-center p-4">6</td>
+								<td>GRASP+Filtering\PR - (P) - TotalIter = 2500</td>
+							</tr>
+							<tr className="border-b hover:bg-gray-100">
+								<td className="text-center p-4">7</td>
+								<td>GRASP+Filtering\PR - (R) - TotalIter = 2500</td>
+							</tr>
+							<tr className="border-b hover:bg-gray-100">
+								<td className="text-center p-4">8</td>
+								<td>GRASP+Filtering\PR - (P&R) - TotalIter = 4500</td>
+							</tr>
+							<tr className="border-b hover:bg-gray-100">
+								<td className="text-center p-4">9</td>
+								<td>GRASP+Filtering\PR - (P) - TotalIter = 9000</td>
+							</tr>
+							<tr className="border-b hover:bg-gray-100">
+								<td className="text-center p-4">10</td>
+								<td>GRASP+Filtering\PR - (R) - TotalIter = 9000</td>
+							</tr>
+							<tr className="border-b hover:bg-gray-100">
+								<td className="text-center p-4">11</td>
+								<td>GRASP+Filtering\PR - (P&R) - TotalIter = 9000</td>
+							</tr>
+						</tbody>
+					</table>
 
 
 				</article>

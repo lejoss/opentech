@@ -28,7 +28,7 @@ function ProfileCard({ person }) {
 			</div>
 			{person.projects && person.projects.length > 0 && (
 				<Link to={`/projects?person=${person.id}`} className="rounded-full border border-indigo-600 hover:bg-indigo-100 flex justify-center p-2 mx-4 shadow-sm cursor-pointer mt-6">
-					<p className="font-bold text-xs uppercase text-indigo-600 font-medium">Projects</p>
+					<p className="font-bold text-sm capitalize text-indigo-600 font-medium">Projects</p>
 				</Link>
 			)}
 

@@ -27,9 +27,8 @@ function ProjectsView({ projects, people }) {
 	return (
 		<main id="projects-view" className="overflow-auto h-screen">
 			{routingProjects.length > 0 && (
-				<div className="h-full">
-					<div className="flex flex-row mt-20 lg:mx-24">
-						
+				<div className="mt-16 pt-20 pb-16">
+					<div className="flex flex-row lg:mx-24">	
 						<p className="text-center text-4xl font-bold md:mx-4 lg:text-left">Routing</p>
 					</div>
 					<section id="routing-projects" className="flex flex-col justify-center lg:justify-start mx-6 mb-4 sm:my-0 sm:mx-6 sm:flex-row sm:flex-wrap md:mx-10 lg:mx-24 2xl:mx-64">
@@ -39,9 +38,8 @@ function ProjectsView({ projects, people }) {
 			)}
 
 			{packingProjects.length > 0 && (
-				<div className="h-full">
-					<div className="flex flex-row lg:mx-24 mb-4">
-						
+				<div className="pt-16 pb-32">
+					<div className="flex flex-row lg:mx-24">
 						<p className="text-center text-4xl font-bold md:mx-4 lg:text-left">Packing</p>
 					</div>
 					<section id="packing-projects" className="flex flex-col justify-center lg:justify-start mx-6 mb-4 sm:my-0 sm:mx-6 sm:flex-row sm:flex-wrap md:mx-10 lg:mx-24 2xl:mx-64">

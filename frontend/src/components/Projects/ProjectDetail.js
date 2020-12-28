@@ -58,57 +58,60 @@ function ProjectDetail({ projects }) {
 
 					<Introduction />
 					<br />
+					<Link to="/files/ResultsClass6Closed.xlsx" target="_blank" download>aqui</Link>
+					<Link to="/files/ResultsClass6Open.xlsx" target="_blank" download>aqui</Link>
+					<br />
 					<table className="table-fixed bg-white shadow-sm rounded-md w-full">
 						<thead className="border-b">
 							<tr>
-								<th className="w-1/2 p-4">Alternative GRASP ID</th>
-								<th className="w-1/2 p-4 text-left">Description</th>
+								<th className="w-1/3 lg:w-1/2 p-4 font-medium">Alternative GRASP ID</th>
+								<th className="w-2/3 lg:w-1/2 p-4 text-left font-medium">Description</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4">1</td>
-								<td>GRASP\PR - (P) - TotalIter = 2500</td>
+								<td className="text-center p-4 font-light">1</td>
+								<td className="font-light">GRASP\PR - (P) - TotalIter = 2500</td>
 							</tr>
 							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4">2</td>
-								<td>GRASP\PR - (R) - TotalIter = 2500</td>
+								<td className="text-center p-4 font-light">2</td>
+								<td className="font-light">GRASP\PR - (R) - TotalIter = 2500</td>
 							</tr>
 							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4">3</td>
-								<td>GRASP\PR - (P) - TotalIter = 4500</td>
+								<td className="text-center p-4 font-light">3</td>
+								<td className="font-light">GRASP\PR - (P) - TotalIter = 4500</td>
 							</tr>
 							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4">4</td>
-								<td>GRASP\PR - (R) - TotalIter = 4500</td>
+								<td className="text-center p-4 font-light">4</td>
+								<td className="font-light">GRASP\PR - (R) - TotalIter = 4500</td>
 							</tr>
 							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4">5</td>
-								<td>GRASP\PR - (P&R) - TotalIter = 4500</td>
+								<td className="text-center p-4 font-light">5</td>
+								<td className="font-light">GRASP\PR - (P&R) - TotalIter = 4500</td>
 							</tr>
 							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4">6</td>
-								<td>GRASP+Filtering\PR - (P) - TotalIter = 2500</td>
+								<td className="text-center p-4 font-light">6</td>
+								<td className="font-light">GRASP+Filtering\PR - (P) - TotalIter = 2500</td>
 							</tr>
 							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4">7</td>
-								<td>GRASP+Filtering\PR - (R) - TotalIter = 2500</td>
+								<td className="text-center p-4 font-light">7</td>
+								<td className="font-light">GRASP+Filtering\PR - (R) - TotalIter = 2500</td>
 							</tr>
 							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4">8</td>
-								<td>GRASP+Filtering\PR - (P&R) - TotalIter = 4500</td>
+								<td className="text-center p-4 font-light">8</td>
+								<td className="font-light">GRASP+Filtering\PR - (P&R) - TotalIter = 4500</td>
 							</tr>
 							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4">9</td>
-								<td>GRASP+Filtering\PR - (P) - TotalIter = 9000</td>
+								<td className="text-center p-4 font-light">9</td>
+								<td className="font-light">GRASP+Filtering\PR - (P) - TotalIter = 9000</td>
 							</tr>
 							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4">10</td>
-								<td>GRASP+Filtering\PR - (R) - TotalIter = 9000</td>
+								<td className="text-center p-4 font-light">10</td>
+								<td className="font-light">GRASP+Filtering\PR - (R) - TotalIter = 9000</td>
 							</tr>
-							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4">11</td>
-								<td>GRASP+Filtering\PR - (P&R) - TotalIter = 9000</td>
+							<tr className="hover:bg-gray-100">
+								<td className="text-center p-4 font-light">11</td>
+								<td className="font-light">GRASP+Filtering\PR - (P&R) - TotalIter = 9000</td>
 							</tr>
 						</tbody>
 					</table>

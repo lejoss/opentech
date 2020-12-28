@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Header from './components/Header/Header';
+import Home from './components/Home';
 import ProjectsView from './components/Projects/ProjectsView';
 import ProjectDetail from './components/Projects/ProjectDetail';
 import PeopleView from './components/People/PeopleView';
@@ -40,7 +41,9 @@ function App() {
     <div className="container min-h-full min-w-full">
       <Header />
       <Switch>
-        <Route component={() => <h1>home</h1>} exact path="/" />
+        <Route exact path="/">
+            <Home />
+        </Route>
         <Route exact path="/people">
           <PeopleView people={state.people} />
         </Route>

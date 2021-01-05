@@ -8,11 +8,14 @@ function Introduction() {
 			<p className="leading-relaxed font-light mb-4 md:text-left ">The Traveling Purchaser Problem (TPP) considers a set of products to be purchased and a set
 				of markets that offer the products at different prices. The objective is to find a tour that minimizes the cost of buying all the
 				products and the cost of visiting the selected markets. </p>
+
+			<p className="sm:w-56 float-right ml-4">
+				<img className="sm:w-56 h-auto bg-transparent" src="/images/tpp.png" alt="tpp" />
+				<p className="italic leading-relaxed font-light text-xs text-gray-700">Fig 1. Different decisions for the TPP in a layered structure. Picture source: Manerba, D., Mansini, R., & Riera-Ledesma, J. (2017). The traveling purchaser problem and its variants. EJOR, 259(1), 1-18.</p>
+			</p>
 			<p className="leading-relaxed font-light mb-4">Formally, consider a depot , a set of markets, and a set
 			of products. The TPP can be defined on a graph where the set of nodes includes the depot and the markets (i.e.,),
 			and the set of arcs defines a complete graph (i.e., ). </p>
-
-			<img className="sm:w-56 h-auto float-right ml-4" src="/images/tpp.jpeg" alt="tpp" />
 
 			<p className="leading-relaxed font-light mb-4">Parameter is the price of buying product from market ,
 			where as denotes the transportation cost between nodes and . The TPP can be classNameified into symmetric or
@@ -36,7 +39,87 @@ function Description() {
 };
 
 function Results() {
-	return <h1>resutls</h1>
+	return (
+		<div>
+			<p className="text-5xl md:mt-20 mb-1">Results</p>
+			<p className="leading-relaxed font-light mb-4">
+				For the Asymmetric TPP the main instances we use in the experiments come from the Class 6 Asymmetric Instances without Capacities for the TPP, proposed by Singh and van Oudheusden (1997) and available at <a className="underline text-indigo-700" href="http://webpages.ull.es/users/jriera/TPP.htm">http://webpages.ull.es/users/jriera/TPP.htm</a>. This set contains 855 randomly generated instances for the asymmetric TPP, with sizes ranging from ten markets and ten products to 300 markets and 200 products.
+	Here we present results that we have obtained for the 855 instances during the all search process. Results are divided into two categories.
+			</p>
+			<ul className="leading-relaxed font-light mb-4">
+				<li><strong>Closed instances:</strong> These are instances with known optimal solutions. Results can be downloaded <Link to="/files/ResultsClass6Closed.xlsx" className="underline text-indigo-700" target="_blank" download>here</Link></li>
+				<li><strong>Open instances:</strong> These are instances without known optimal solutions, for which best found solutions are reported. Results can be downloaded <Link to="/files/ResultsClass6Open.xlsx" className="underline text-indigo-700" target="_blank" download>here</Link>.</li>
+			</ul>
+
+			<p className="leading-relaxed font-light mb-4">
+				For each instance we report the objective function value (Sol) and the time in seconds required to find the solution (T (s)). For closed instances we report the Gap (%) against the optimal solution. Some of the computational times for the MIP are not reported due to information loss.
+			</p>
+			<p className="leading-relaxed font-light mb-4">
+				Both files have the columns GRASP + Filtering/PR – TotalIter = 4500 with their respective constructive approach (P: Purchased, R: Route). These columns refer to the chosen variant of the GRASP algorithm.
+			</p>
+			<p className="leading-relaxed font-light mb-4">
+				Both files have the column “Best solutions obtained with alternative GRASP configurations", which refers to the best solution obtained with a GRASP configuration different to the ones reported in the paper; these alternative approaches are identified in the column Alternative GRASP ID.
+			</p>
+			<p className="leading-relaxed font-light mb-4">
+				The following definitions apply for the variants of the algorithm. Filtering means the approach includes Filtrado. PR indicates the approach uses Path Relinking. Each ID describes the chosen algorithm alternative, followed by the chosen construction approach and for the parameter TotalIter.
+			</p>
+			<table className="table-fixed bg-white shadow-sm rounded-md w-full">
+				<thead className="border-b">
+					<tr>
+						<th className="w-1/3 lg:w-1/2 p-4 font-medium">Alternative GRASP ID</th>
+						<th className="w-2/3 lg:w-1/2 p-4 text-left font-medium">Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr className="border-b hover:bg-gray-100">
+						<td className="text-center p-4 font-light">1</td>
+						<td className="font-light">GRASP\PR - (P) - TotalIter = 2500</td>
+					</tr>
+					<tr className="border-b hover:bg-gray-100">
+						<td className="text-center p-4 font-light">2</td>
+						<td className="font-light">GRASP\PR - (R) - TotalIter = 2500</td>
+					</tr>
+					<tr className="border-b hover:bg-gray-100">
+						<td className="text-center p-4 font-light">3</td>
+						<td className="font-light">GRASP\PR - (P) - TotalIter = 4500</td>
+					</tr>
+					<tr className="border-b hover:bg-gray-100">
+						<td className="text-center p-4 font-light">4</td>
+						<td className="font-light">GRASP\PR - (R) - TotalIter = 4500</td>
+					</tr>
+					<tr className="border-b hover:bg-gray-100">
+						<td className="text-center p-4 font-light">5</td>
+						<td className="font-light">GRASP\PR - (P&R) - TotalIter = 4500</td>
+					</tr>
+					<tr className="border-b hover:bg-gray-100">
+						<td className="text-center p-4 font-light">6</td>
+						<td className="font-light">GRASP+Filtering\PR - (P) - TotalIter = 2500</td>
+					</tr>
+					<tr className="border-b hover:bg-gray-100">
+						<td className="text-center p-4 font-light">7</td>
+						<td className="font-light">GRASP+Filtering\PR - (R) - TotalIter = 2500</td>
+					</tr>
+					<tr className="border-b hover:bg-gray-100">
+						<td className="text-center p-4 font-light">8</td>
+						<td className="font-light">GRASP+Filtering\PR - (P&R) - TotalIter = 4500</td>
+					</tr>
+					<tr className="border-b hover:bg-gray-100">
+						<td className="text-center p-4 font-light">9</td>
+						<td className="font-light">GRASP+Filtering\PR - (P) - TotalIter = 9000</td>
+					</tr>
+					<tr className="border-b hover:bg-gray-100">
+						<td className="text-center p-4 font-light">10</td>
+						<td className="font-light">GRASP+Filtering\PR - (R) - TotalIter = 9000</td>
+					</tr>
+					<tr className="hover:bg-gray-100">
+						<td className="text-center p-4 font-light">11</td>
+						<td className="font-light">GRASP+Filtering\PR - (P&R) - TotalIter = 9000</td>
+					</tr>
+				</tbody>
+			</table>
+			<p className="leading-relaxed font-light mb-4 text-xs">As mentioned in the paper, all GRASP configurations have parameter values. LocalIter = 3850 y E = 20. </p>
+		</div>
+	)
 };
 
 
@@ -57,66 +140,8 @@ function ProjectDetail({ projects }) {
 					</p>
 
 					<Introduction />
-					<br />
-					<Link to="/files/ResultsClass6Closed.xlsx" target="_blank" download>aqui</Link>
-					<Link to="/files/ResultsClass6Open.xlsx" target="_blank" download>aqui</Link>
-					<br />
-					<table className="table-fixed bg-white shadow-sm rounded-md w-full">
-						<thead className="border-b">
-							<tr>
-								<th className="w-1/3 lg:w-1/2 p-4 font-medium">Alternative GRASP ID</th>
-								<th className="w-2/3 lg:w-1/2 p-4 text-left font-medium">Description</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4 font-light">1</td>
-								<td className="font-light">GRASP\PR - (P) - TotalIter = 2500</td>
-							</tr>
-							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4 font-light">2</td>
-								<td className="font-light">GRASP\PR - (R) - TotalIter = 2500</td>
-							</tr>
-							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4 font-light">3</td>
-								<td className="font-light">GRASP\PR - (P) - TotalIter = 4500</td>
-							</tr>
-							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4 font-light">4</td>
-								<td className="font-light">GRASP\PR - (R) - TotalIter = 4500</td>
-							</tr>
-							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4 font-light">5</td>
-								<td className="font-light">GRASP\PR - (P&R) - TotalIter = 4500</td>
-							</tr>
-							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4 font-light">6</td>
-								<td className="font-light">GRASP+Filtering\PR - (P) - TotalIter = 2500</td>
-							</tr>
-							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4 font-light">7</td>
-								<td className="font-light">GRASP+Filtering\PR - (R) - TotalIter = 2500</td>
-							</tr>
-							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4 font-light">8</td>
-								<td className="font-light">GRASP+Filtering\PR - (P&R) - TotalIter = 4500</td>
-							</tr>
-							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4 font-light">9</td>
-								<td className="font-light">GRASP+Filtering\PR - (P) - TotalIter = 9000</td>
-							</tr>
-							<tr className="border-b hover:bg-gray-100">
-								<td className="text-center p-4 font-light">10</td>
-								<td className="font-light">GRASP+Filtering\PR - (R) - TotalIter = 9000</td>
-							</tr>
-							<tr className="hover:bg-gray-100">
-								<td className="text-center p-4 font-light">11</td>
-								<td className="font-light">GRASP+Filtering\PR - (P&R) - TotalIter = 9000</td>
-							</tr>
-						</tbody>
-					</table>
-
-
+					<hr />
+					<Results />
 				</article>
 			</section>
 		</main>

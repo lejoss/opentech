@@ -1,23 +1,23 @@
 import { Link } from 'react-router-dom';
-export default function Home() {
+export default function Home({ latestProjects = [] }) {
 	return (
 		<div className="pt-16 h-screen lg:mx-40">
 			<h1 className="text-2xl">Recent Projects</h1>
 
-			<div className="flex bg-white p-2 shadow-sm items-center border-b">
-				<img className="w-24 h-24" src={"/images/tpp.jpeg"} alt="tpp" />
-				<div className="ml-4">
-					<Link to="/projects" className="font-bold">Traveling PurchaserProblem</Link>
-					<p className="font-light">Cuellar-Usaquen D, Gomez C and Álvarez-Martínez, D. A GRASP/Path-Relinking Algorithm for the Traveling PurchaserProblem</p>
+			{latestProjects.length > 0 && latestProjects.map((p, i) => (
+				<div key={i} className="flex bg-white p-2 shadow-sm rounded-sm items-center border-b">
+					<img className="w-20 h-20" src={p.img} alt="tpp" />
+					<div className="ml-4">
+						<Link to="/projects" className="flex items-center font-bold text-indigo-700">
+							<img src={p.type === 'packing' ? "/images/packing.svg" : "/images/routing.svg"} alt="" className="w-4 h-4 mr-2" />
+							<p>{p.title}</p>
+							<p className="ml-2 italic font-light text-sm">({p.type})</p>
+						</Link>
+						<p className="font-light">{p.subTitle}</p>
+					</div>
 				</div>
-			</div>
-			<div className="flex bg-white p-2 shadow-sm items-center">
-				<img className="w-24 h-24" src={"/images/tpp2.jpg"} alt="tpp" />
-				<div className="ml-4">
-					<Link to="/projects" className="font-bold">Traveling PurchaserProblem</Link>
-					<p className="font-light">Cuellar-Usaquen D, Gomez C and Álvarez-Martínez, D. A GRASP/Path-Relinking Algorithm for the Traveling PurchaserProblem</p>
-				</div>
-			</div>
+			))}
+
 
 
 		</div>

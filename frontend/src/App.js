@@ -37,12 +37,14 @@ function App() {
   //   localStorage.setItem('app', state);
   // }, [state])
 
+  const latestProjects = state.projects.list.filter((p, i) => i <= 2 ? true : false);
+  
   return (
     <div className="container min-h-full min-w-full">
       <Header />
       <Switch>
         <Route exact path="/">
-            <Home />
+            <Home latestProjects={latestProjects} />
         </Route>
         <Route exact path="/people">
           <PeopleView people={state.people} />

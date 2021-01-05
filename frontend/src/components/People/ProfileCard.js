@@ -15,14 +15,14 @@ function ProfileCard({ person }) {
 					<img className="mr-4" src="/images/call.svg" alt="contact pbx" />
 					<div className="">
 						<p className="text-sm font-light">{person.phone || ''}</p>
-						<p className=" text-gray-600 text-sm font-light">Mobile</p>
+						<p className=" text-gray-600 text-xs font-light">Mobile</p>
 					</div>
 				</div>
 				<div className="flex flex-1 items-start ml-0 mb-1">
 					<img className="mr-4" src="/images/email.svg" alt="contact email" />
 					<div className="">
 						<p className="break-all text-sm font-light">{person.email || ''}</p>
-						<p className="text-gray-600 text-sm font-light">Work</p>
+						<p className="text-gray-600 text-xs font-light">Work</p>
 					</div>
 				</div>
 			</div>

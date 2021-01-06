@@ -6,7 +6,7 @@ function ProfileCard({ person }) {
 	return (
 		<figure className="flex flex-col sm:mr-2 mb-2 py-4 bg-white sm:w-5/12 lg:w-64 shadow-sm rounded-md">
 			<div>
-				<img className="my-0 mx-auto w-20 h-20 rounded-full" src={person.img || '/images/user.svg'} alt="tpp" />
+				<img className="my-0 mx-auto w-20 h-20 rounded-full" src={person.img || '/images/user.svg'} alt={person.name} />
 				<p className="text-center font-bold text-lg mt-4">{person.name || ''}</p>
 				<p className="text-center font-light mb-8 text-sm text-gray-600 font-light">{person.jobTitle || ''}</p>
 			</div>

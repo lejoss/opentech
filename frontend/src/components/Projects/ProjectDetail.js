@@ -1,10 +1,9 @@
 import React from 'react';
-import { Switch, Link, Route, useRouteMatch, useParams } from 'react-router-dom';
+import { Link, useRouteMatch, useParams } from 'react-router-dom';
 
 function Introduction() {
 	return (
 		<div className="m-1">
-
 			<p className="leading-relaxed font-light mb-4 md:text-left ">The Traveling Purchaser Problem (TPP) considers a set of products to be purchased and a set
 				of markets that offer the products at different prices. The objective is to find a tour that minimizes the cost of buying all the
 				products and the cost of visiting the selected markets. </p>

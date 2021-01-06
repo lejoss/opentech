@@ -40,7 +40,7 @@ function Description() {
 function Results() {
 	return (
 		<div>
-			<p className="text-5xl md:mt-20 mb-1">Results</p>
+			<p className="text-center text-5xl pt-10 mb-4 lg:text-left">Results</p>
 			<p className="leading-relaxed font-light mb-4">
 				For the Asymmetric TPP the main instances we use in the experiments come from the Class 6 Asymmetric Instances without Capacities for the TPP, proposed by Singh and van Oudheusden (1997) and available at <a className="underline text-indigo-700" href="http://webpages.ull.es/users/jriera/TPP.htm">http://webpages.ull.es/users/jriera/TPP.htm</a>. This set contains 855 randomly generated instances for the asymmetric TPP, with sizes ranging from ten markets and ten products to 300 markets and 200 products.
 	Here we present results that we have obtained for the 855 instances during the all search process. Results are divided into two categories.
@@ -129,9 +129,9 @@ function ProjectDetail({ projects }) {
 
 	return (
 		<main className="overflow-auto">
-			<section className="my-20 mx-6 sm:mx-6 md:mx-10 lg:mx-32 2xl:mx-64">
+			<section className="my-20 mx-6 sm:mx-6 md:mx-10 lg:mx-40 2xl:mx-64">
 				<article className="">
-					<p className="text-5xl md:mt-40 mb-1">Traveling Purchased Problem</p>
+					<p className="text-5xl md:mt-40 mb-4">Traveling Purchased Problem</p>
 					<p className="mx-1 italic leading-relaxed font-light text-xs text-gray-700 mb-6">
 						This Web site is intended to be served as a supplement to the paper submitted:
 	Cuellar-Usaquen D, Gomez C and Álvarez-Martínez, D. A GRASP/Path-Relinking Algorithm for the Traveling PurchaserProblem

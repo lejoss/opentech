@@ -25,24 +25,24 @@ function ProjectsView({ projects, people }) {
 	}
 
 	return (
-		<main id="projects-view" className="overflow-auto h-screen">
+		<main id="projects-view" className="overflow-auto h-full mx-6 sm:my-0 sm:mx-6 lg:mx-40 md:mx-10  2xl:mx-64">
 			{routingProjects.length > 0 && (
-				<div className="mt-16 pt-20 pb-16">
-					<div className="flex flex-row lg:mx-24">	
-						<p className="text-center text-4xl font-bold md:mx-4 lg:text-left">Routing</p>
+				<div className="mt-20">
+					<div className="flex flex-row">
+						<p className="text-center text-5xl pt-10 mb-4 lg:text-left">Routing</p>
 					</div>
-					<section id="routing-projects" className="flex flex-col justify-center lg:justify-start mx-6 mb-4 sm:my-0 sm:mx-6 sm:flex-row sm:flex-wrap md:mx-10 lg:mx-24 2xl:mx-64">
+					<section id="routing-projects" className="flex flex-col justify-center mb-4 lg:justify-start sm:flex-row sm:flex-wrap">
 						{routingProjects.map(p => <ProjectCard key={p.id} project={p} />)}
 					</section>
 				</div>
 			)}
 
 			{packingProjects.length > 0 && (
-				<div className="pt-16 pb-32">
-					<div className="flex flex-row lg:mx-24">
-						<p className="text-center text-4xl font-bold md:mx-4 lg:text-left">Packing</p>
+				<div className={`${routingProjects.length > 0 ? 'mt-10' : 'mt-20'}`}>
+					<div className="flex flex-row">
+						<p className="text-center text-5xl pt-10 mb-4 lg:text-left">Packing</p>
 					</div>
-					<section id="packing-projects" className="flex flex-col justify-center lg:justify-start mx-6 mb-4 sm:my-0 sm:mx-6 sm:flex-row sm:flex-wrap md:mx-10 lg:mx-24 2xl:mx-64">
+					<section id="packing-projects" className="flex flex-col justify-center mb-4 lg:justify-start sm:flex-row sm:flex-wrap">
 						{packingProjects.map(p => <ProjectCard key={p.id} project={p} />)}
 					</section>
 				</div>

@@ -3,11 +3,11 @@ export default function Home({ latestProjects = [] }) {
 	return (
 		<div className="pt-16 h-full lg:mx-40 bg-white px-10 shadow-sm">
 			<div className="flex mt-16">
-				<img className="w-40 h-40 opacity-50" src="/images/logo.png" alt="logo" />
-				<p className="text-2xl font-light px-10 tracking-wide leading-relaxed"><strong>Opentechs</strong> is a repository of projects developed by the group of people posted on the website. Here you will find the latest works created by our team along with complementary information on each project.</p>
+				<img className="w-40 h-40 opacity-75" src="/images/logo.png" alt="logo" />
+				<p className="text-2xl font-light px-10 tracking-wide"><strong>Opentechs</strong> is a repository of projects developed by the group of people posted on the website. Here you will find the latest works created by our team along with complementary information on each project.</p>
 			</div>
-			<br/>
-			<br/>
+			<br />
+			<br />
 			<hr />
 			<p className="text-3xl pt-10 mb-4">Recent Projects</p>
 			{latestProjects.length > 0 && latestProjects.map((p, i) => (
@@ -24,29 +24,31 @@ export default function Home({ latestProjects = [] }) {
 				</div>
 			))}
 
-			<p className="text-3xl pt-10 mb-4">Contact</p>
-			<div className="pb-10">
-				<div className="flex">
-					<img className="mr-4" src="/images/person.svg" alt="david" />
-					<p className="font-light">David Álvarez-Martínez</p>
+			<section id="contact">
+				<p className="text-3xl pt-10 mb-4">Contact</p>
+				<div className="pb-10">
+					<div className="flex">
+						<img className="mr-4" src="/images/person.svg" alt="david" />
+						<p className="font-light">David Álvarez-Martínez</p>
+					</div>
+					<div className="flex">
+						<img className="mr-4" src="/images/email.svg" alt="email" />
+						<p className="font-light">akavallo@gmail.com</p>
+					</div>
+					<div className="flex">
+						<img className="mr-4" src="/images/building.svg" alt="building" />
+						<p className="font-light">Mario Laserna Building, Off. 757</p>
+					</div>
+					<div className="flex">
+						<img className="mr-4" src="/images/call.svg" alt="phone" />
+						<p className="font-light">+57 (1) 3394949 - Ext: 3870</p>
+					</div>
+					<div className="flex">
+						<img className="mr-4" src="/images/place.svg" alt="place" />
+						<p className="font-light">Bogota D.C. - Colombia</p>
+					</div>
 				</div>
-				<div className="flex">
-					<img className="mr-4" src="/images/email.svg" alt="email" />
-					<p className="font-light">akavallo@gmail.com</p>
-				</div>
-				<div className="flex">
-					<img className="mr-4" src="/images/building.svg" alt="building" />
-					<p className="font-light">Mario Laserna Building, Off. 757</p>
-				</div>
-				<div className="flex">
-					<img className="mr-4" src="/images/call.svg" alt="phone" />
-					<p className="font-light">+57 (1) 3394949 - Ext: 3870</p>
-				</div>
-				<div className="flex">
-					<img className="mr-4" src="/images/place.svg" alt="place" />
-					<p className="font-light">Bogota D.C. - Colombia</p>
-				</div>
-			</div>
+			</section>
 
 		</div>
 	)

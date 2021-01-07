@@ -7,7 +7,6 @@ function displayAuthors(peopleIds, peopleMap) {
 	));
 }
 
-
 function ProjectCard({ project, people = null }) {
 
 	return (
@@ -18,7 +17,6 @@ function ProjectCard({ project, people = null }) {
 				? <div className="flex flex-wrap mt-2">{displayAuthors(project.people, people)}</div>
 				: <p className="flex-1 font-light my-2 text-xs">{project.description || ''}</p>
 			}
-
 
 			<Link to={`/projects/${project.id}/intro`} className="rounded-full border border-indigo-600 hover:bg-indigo-100 flex justify-center p-2 mx-4 shadow-sm cursor-pointer mt-6">
 				<p className="capitalize text-sm text-indigo-600 font-bold">show more</p>

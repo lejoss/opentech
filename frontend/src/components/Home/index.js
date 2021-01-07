@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Contact from '../contact';
+import Contact from '../Contact';
 import ProjectCard from '../Projects/ProjectCard';
 import { mapToKeys } from '../../services'
 
@@ -7,7 +7,7 @@ function RecentProjects(arr, people) {
 	if (arr.length > 0) {
 		return (
 			<section id="recent-projects" className="mb-10">
-				<p className="text-3xl mb-6">Recent Projects</p>
+				<p className="text-3xl mb-6 leading-relaxed">Recent Projects</p>
 				<div className="flex justify-between">
 					{arr.map(p => <ProjectCard people={people} key={p.id} project={p} />)}
 				</div>

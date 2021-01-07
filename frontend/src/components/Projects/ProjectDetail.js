@@ -65,8 +65,8 @@ function Results() {
 			<table className="table-fixed bg-white shadow-sm rounded-md w-full">
 				<thead className="border-b">
 					<tr>
-						<th className="w-1/3 lg:w-1/2 p-4 font-medium">Alternative GRASP ID</th>
-						<th className="w-2/3 lg:w-1/2 p-4 text-left font-medium">Description</th>
+						<th className="uppercase w-1/3 lg:w-1/2 p-4 ">Alternative GRASP ID</th>
+						<th className="uppercase w-2/3 lg:w-1/2 p-4 text-left">Description</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -116,7 +116,8 @@ function Results() {
 					</tr>
 				</tbody>
 			</table>
-			<p className="leading-relaxed font-light mb-4 text-xs">As mentioned in the paper, all GRASP configurations have parameter values. LocalIter = 3850 y E = 20. </p>
+			<br/>
+			<p className="leading-relaxed font-light mb-4 text-xs text-center">As mentioned in the paper, all GRASP configurations have parameter values. LocalIter = 3850 y E = 20. </p>
 		</div>
 	)
 };
@@ -129,7 +130,7 @@ function ProjectDetail({ projects }) {
 
 	return (
 		<main className="overflow-auto">
-			<section className="my-20 mx-6 sm:mx-6 md:mx-10 lg:mx-40 2xl:mx-64">
+			<section className="rounded shadow-sm p-4  mx-6 sm:mx-6 md:mx-10 lg:mx-40 2xl:mx-64 bg-white">
 				<article className="">
 					<p className="text-5xl md:mt-40 mb-4">Traveling Purchased Problem</p>
 					<p className="mx-1 italic leading-relaxed font-light text-xs text-gray-700 mb-6">

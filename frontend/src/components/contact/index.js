@@ -1,7 +1,7 @@
 export default function Contact() {
 	return (
-		<section id="contact" className="bg-white rounded shadow-sm px-12 py-6">
-			<p className="text-3xl mb-4">Contact</p>
+		<section id="contact" className="bg-white rounded shadow-md px-12 py-6">
+			<p className="text-4xl mb-4">Contact</p>
 			<div>
 				<div className="flex">
 					<img className="mr-4" src="/images/person.svg" alt="david" />

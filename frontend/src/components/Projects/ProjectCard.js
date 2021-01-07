@@ -10,7 +10,7 @@ function displayAuthors(peopleIds, peopleMap) {
 function ProjectCard({ project, people = null }) {
 
 	return (
-		<figure className="flex flex-col sm:mr-2 mb-2 py-6 px-4 bg-white sm:w-5/12 lg:w-64 shadow-sm rounded-md">
+		<figure className="flex flex-col sm:mr-2 mb-2 py-6 px-4 bg-white sm:w-5/12 lg:w-64 shadow-md rounded-md">
 			<img className="sm:w-40 my-0 mx-auto w-64 h-32" src={project.img || "/images/broken_image.svg"} alt="tpp" />
 			<p className="text-lg mt-4 font-bold">{project.title || ''}</p>
 			{people

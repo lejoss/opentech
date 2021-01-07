@@ -17,6 +17,8 @@ const initialState = {
   contact: {},
 };
 
+const MAX_PROJECTS_TO_SHOW_IN_HOME = 2;
+
 function initializeApp() {
   return JSON.parse(localStorage.getItem('app')) || initialState;
 }
@@ -37,14 +39,14 @@ function App() {
   //   localStorage.setItem('app', state);
   // }, [state])
 
-  const latestProjects = state.projects.list.filter((p, i) => i <= 2 ? true : false);
+  const latestProjects = state.projects.list.filter((p, i) => i <= MAX_PROJECTS_TO_SHOW_IN_HOME ? true : false);
   
   return (
     <div className="container min-h-full min-w-full">
       <Header />
       <Switch>
         <Route exact path="/">
-            <Home latestProjects={latestProjects} />
+            <Home latestProjects={latestProjects} people={state.people.list} />
         </Route>
         <Route exact path="/people">
           <PeopleView people={state.people} />
@@ -55,7 +57,6 @@ function App() {
         <Route path="/projects/:projectId/intro">
           <ProjectDetail projects={mapToKeys(state.projects.list) || {}} />
         </Route>
-        <Route component={() => <h1>contacts</h1>} exact path="/contact" />
       </Switch>
     </div>
   );

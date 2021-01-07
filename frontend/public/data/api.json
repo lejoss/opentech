@@ -5,15 +5,12 @@
 		"list": [
 			{
 				"id": 1,
-				"name": "David Alvarez",
+				"name": "David Alvarez-Martinez",
 				"jobTitle": "Assistant Professor",
 				"phone": "+57312345656",
 				"email": "akavallo@gmail.com",
 				"img": "/images/dave.png",
-				"projects": [
-					1,
-					2
-				]
+				"projects": [1,2]
 			},
 			{
 				"id": 2,
@@ -28,23 +25,14 @@
 			},
 			{
 				"id": 3,
-				"name": "Daniel Cuellar",
+				"name": "Daniel Cuellar-Usaquen",
 				"jobTitle": "Phd Student",
 				"phone": "+57313335656",
 				"email": "danielcuellar@gmail.com",
-				"img": "",
+				"img": "/images/dani.jpeg",
 				"projects": [
 					1
 				]
-			},
-			{
-				"id": 4,
-				"name": "Alejandro Baez",
-				"jobTitle": "Software Engineer",
-				"phone": "+573135464402",
-				"email": "nativo.alejandro@gmail.com",
-				"img": "/images/lejo.jpeg",
-				"projects": []
 			}
 		]
 	},
@@ -57,7 +45,8 @@
 				"subTitle": "Cuellar-Usaquen D, Gomez C and Álvarez-Martínez, D. A GRASP/Path-Relinking Algorithm for the Traveling PurchaserProblem",
 				"description": "(TPP) considers a set of products to be purchased and a set of markets that offer the products at different prices.",
 				"img": "/images/tpp.jpeg",
-				"type": "routing"
+				"type": "routing",
+				"people": [1, 2, 3]
 			},
 			{
 				"id": 2,
@@ -65,7 +54,8 @@
 				"subTitle": "Cuellar-Usaquen D, Gomez C and Álvarez-Martínez, D. A GRASP/Path-Relinking Algorithm for the Traveling PurchaserProblem",
 				"description": "(TPP) considers a set of products to be purchased and a set of markets that offer the products at different prices.",
 				"img": "/images/tpp2.jpg",
-				"type": "packing"
+				"type": "packing",
+				"people": [1, 2, 3]
 			},
 			{
 				"id": 3,
@@ -73,7 +63,8 @@
 				"subTitle": "Cuellar-Usaquen D, Gomez C and Álvarez-Martínez, D. A GRASP/Path-Relinking Algorithm for the Traveling PurchaserProblem",
 				"description": "(TPP) considers a set of products to be purchased and a set of markets that offer the products at different prices.",
 				"img": "/images/tpp2.jpg",
-				"type": "packing"
+				"type": "packing",
+				"people": [1]
 			},
 			{
 				"id": 4,
@@ -81,7 +72,8 @@
 				"subTitle": "Cuellar-Usaquen D, Gomez C and Álvarez-Martínez, D. A GRASP/Path-Relinking Algorithm for the Traveling PurchaserProblem",
 				"description": "(TPP) considers a set of products to be purchased and a set of markets that offer the products at different prices.",
 				"img": "/images/tpp2.jpg",
-				"type": "packing"
+				"type": "packing",
+				"people": [2, 3]
 			},
 			{
 				"id": 5,
@@ -89,7 +81,8 @@
 				"subTitle": "Cuellar-Usaquen D, Gomez C and Álvarez-Martínez, D. A GRASP/Path-Relinking Algorithm for the Traveling PurchaserProblem",
 				"description": "(TPP) considers a set of products to be purchased and a set of markets that offer the products at different prices.",
 				"img": "/images/tpp2.jpg",
-				"type": "routing"
+				"type": "routing",
+				"people": [1, 2]
 			},
 			{
 				"id": 6,
@@ -97,9 +90,29 @@
 				"subTitle": "Cuellar-Usaquen D, Gomez C and Álvarez-Martínez, D. A GRASP/Path-Relinking Algorithm for the Traveling PurchaserProblem",
 				"description": "(TPP) considers a set of products to be purchased and a set of markets that offer the products at different prices.",
 				"img": "/images/tpp2.jpg",
-				"type": "packing"
+				"type": "packing",
+				"people": [1, 3]
 			}
 		]
+	},
+	"projectDetail": {
+		"title": "",
+		"statement": "",
+		"img": "",
+		"imageFoot": "",
+		"problemDescription": "",
+		"instances": {
+			"detail": "",
+			"links": {}
+		},
+		"results": {
+			"detail": "",
+			"links": {},
+			"display": {
+				"table": false,
+				"images": []
+			}
+		}
 	},
 	"contact": {}
 }

@@ -3,9 +3,6 @@ import ProjectCard from './ProjectCard';
 import useQuery from '../../hooks/useQuery';
 import { mapToKeys } from '../../services';
 
-// <img src="/images/routing.svg" alt="" className="w-10 h-10" />
-// <img src="/images/packing.svg" alt="" className="w-10 h-10" />
-
 function ProjectsView({ projects, people }) {
 	const query = useQuery();
 	let routingProjects = [];

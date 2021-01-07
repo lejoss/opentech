@@ -26,21 +26,3 @@ function ProjectCard({ project, people = null }) {
 }
 
 export default ProjectCard;
-
-
-
-
-			// <p className="text-3xl pt-10 mb-4">Recent Projects</p>
-			// {latestProjects.length > 0 && latestProjects.map((p, i) => (
-			// 	<div key={i} className="flex bg-white p-2 rounded-sm items-center border-b">
-			// 		<img className="w-20 h-20" src={p.img} alt="tpp" />
-			// 		<div className="ml-4">
-			// 			<Link to="/projects" className="flex items-center font-bold text-indigo-700">
-			// 				<img src={p.type === 'packing' ? "/images/packing.svg" : "/images/routing.svg"} alt="" className="w-4 h-4 mr-2" />
-			// 				<p>{p.title}</p>
-			// 				<p className="ml-2 italic font-light text-sm">({p.type})</p>
-			// 			</Link>
-			// 			<p className="font-light">{p.subTitle}</p>
-			// 		</div>
-			// 	</div>
-			// ))}

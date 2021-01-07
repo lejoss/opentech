@@ -8,7 +8,7 @@ function RecentProjects(arr, people) {
 		return (
 			<section id="recent-projects" className="mb-10">
 				<p className="text-3xl mb-6">Recent Projects</p>
-				<div className="flex justify-around">
+				<div className="flex justify-between">
 					{arr.map(p => <ProjectCard people={people} key={p.id} project={p} />)}
 				</div>
 			</section>

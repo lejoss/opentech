@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function displayAuthors(peopleIds, peopleMap) {
 	return peopleIds.map((personId, i) => (
-		<Link key={i} to={`/people?person=${personId}`} className="underline font-light text-xs text-indigo-700 mr-1">{peopleMap[personId].name}</Link>
+		<Link key={i} to={`/people?person=${personId}`} className="underline font-light text-xs text-indigo-800 mr-1">{peopleMap[personId].name}</Link>
 	));
 }
 
@@ -18,7 +18,7 @@ function ProjectCard({ project, people = null }) {
 				: <p className="flex-1 font-light my-2 text-xs">{project.description || ''}</p>
 			}
 
-			<Link to={`/projects/${project.id}/intro`} className="rounded-full border border-indigo-600 hover:bg-indigo-100 flex justify-center p-2 mx-4 shadow-sm cursor-pointer mt-6">
+			<Link to={`/projects/${project.id}/intro`} className="rounded-full border border-indigo-800 hover:bg-indigo-100 flex justify-center p-2 mx-4 shadow-sm cursor-pointer mt-6">
 				<p className="capitalize text-sm text-indigo-600 font-bold">show more</p>
 			</Link>
 		</figure>

@@ -14,7 +14,7 @@ function ProjectCard({ project, people = null }) {
 			<img className="sm:w-40 my-0 mx-auto w-64 h-32" src={project.img || "/images/broken_image.svg"} alt="tpp" />
 			<p className="text-lg mt-4 font-bold">{project.title || ''}</p>
 			{people
-				? <div className="flex flex-wrap mt-2">{displayAuthors(project.people, people)}</div>
+				? <div className="flex flex-1 flex-wrap mt-2">{displayAuthors(project.people, people)}</div>
 				: <p className="flex-1 font-light my-2 text-xs">{project.description || ''}</p>
 			}
 

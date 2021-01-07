@@ -6,8 +6,8 @@ import { mapToKeys } from '../../services'
 function RecentProjects(arr, people) {
 	if (arr.length > 0) {
 		return (
-			<section id="recent-projects" className="mb-2">
-				<p className="text-3xl mb-4">Recent Projects</p>
+			<section id="recent-projects" className="mb-10">
+				<p className="text-3xl mb-6">Recent Projects</p>
 				<div className="flex justify-around">
 					{arr.map(p => <ProjectCard people={people} key={p.id} project={p} />)}
 				</div>

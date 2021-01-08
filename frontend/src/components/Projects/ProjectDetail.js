@@ -116,7 +116,7 @@ function Results() {
 					</tr>
 				</tbody>
 			</table>
-			<br/>
+			<br />
 			<p className="leading-relaxed font-light mb-4 text-xs text-center">As mentioned in the paper, all GRASP configurations have parameter values. LocalIter = 3850 y E = 20. </p>
 		</div>
 	)
@@ -130,7 +130,7 @@ function ProjectDetail({ projects }) {
 
 	return (
 		<main className="overflow-auto">
-			<section className="rounded shadow-md p-4  mx-6 sm:mx-6 md:mx-10 lg:mx-40 2xl:mx-64 bg-white">
+			<section className="rounded shadow-sm p-4  mx-6 sm:mx-6 md:mx-10 lg:mx-40 2xl:mx-64 bg-white">
 				<article className="">
 					<p className="text-5xl md:mt-32 mb-4">Traveling Purchased Problem</p>
 					<p className="mx-1 italic leading-relaxed font-light text-xs text-gray-700 mb-6">

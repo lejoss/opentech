@@ -10,12 +10,21 @@
 				"phone": "+57312345656",
 				"email": "akavallo@gmail.com",
 				"img": "/images/dave.png",
+				"projects": [1]
+			},
+			{
+				"id": 2,
+				"name": "Camilo Gomez",
+				"jobTitle": "Assistant Professor",
+				"phone": "+57311345556",
+				"email": "chgomez@gmail.com",
+				"img": "/images/milo.png",
 				"projects": [
 					1
 				]
 			},
 			{
-				"id": 2,
+				"id": 3,
 				"name": "Daniel Cuellar-Usaquen",
 				"jobTitle": "Phd Student",
 				"phone": "+57313335656",
@@ -37,10 +46,7 @@
 				"description": "(TPP) considers a set of products to be purchased and a set of markets that offer the products at different prices.",
 				"img": "/images/tpp.jpeg",
 				"type": "routing",
-				"people": [
-					1,
-					2
-				]
+				"people": [1, 2, 3]
 			}
 		]
 	},

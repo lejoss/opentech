@@ -11,7 +11,7 @@ function ProfileCard({ person }) {
 				<p className="text-center font-light mb-8 text-sm text-gray-600 font-light">{person.jobTitle || ''}</p>
 			</div>
 			<div className="mx-4">
-				<div className="flex items-start ml-0 mb-1">
+				<div className="hidden flex items-start ml-0 mb-1">
 					<img className="mr-4" src="/images/call.svg" alt="contact pbx" />
 					<div className="">
 						<p className="text-sm font-light">{person.phone || ''}</p>

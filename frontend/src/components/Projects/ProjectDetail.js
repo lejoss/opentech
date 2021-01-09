@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link, useRouteMatch, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Introduction() {
 	return (
 		<div className="m-1">
 			<p className="flex flex-col items-center sm:w-56 float-right sm:ml-4">
 				<img className="sm:w-56 h-48 " src="/images/tpp.png" alt="tpp" />
-				<p className="italic leading-relaxed font-light text-xs text-gray-700 mb-4 sm:mb-0">Fig 1. Different decisions for the TPP in a layered structure. Picture source: Manerba, D., Mansini, R., & Riera-Ledesma, J. (2017). The traveling purchaser problem and its variants. EJOR, 259(1), 1-18.</p>
+				<span className="italic leading-relaxed font-light text-xs text-gray-700 mb-4 sm:mb-0">Fig 1. Different decisions for the TPP in a layered structure. Picture source: Manerba, D., Mansini, R., & Riera-Ledesma, J. (2017). The traveling purchaser problem and its variants. EJOR, 259(1), 1-18.</span>
 			</p>
 
 			<p className="leading-relaxed font-light mb-4 md:text-left ">The Traveling Purchaser Problem (TPP) considers a set of products to be purchased and a set
@@ -32,11 +32,6 @@ function Introduction() {
 
 	)
 }
-
-
-function Description() {
-	return <h1>problem description</h1>
-};
 
 function Results() {
 	return (
@@ -125,9 +120,8 @@ function Results() {
 
 
 function ProjectDetail({ projects }) {
-	let { path, url } = useRouteMatch();
-	let { projectId } = useParams();
-	const projectDetail = projects[projectId] || {};
+	// let { projectId } = useParams();
+	// const projectDetail = projects[projectId] || {};
 
 	return (
 		<main className="overflow-auto">

@@ -4,14 +4,15 @@ import { Link, useRouteMatch, useParams } from 'react-router-dom';
 function Introduction() {
 	return (
 		<div className="m-1">
-			<p className="leading-relaxed font-light mb-4 md:text-left ">The Traveling Purchaser Problem (TPP) considers a set of products to be purchased and a set
-				of markets that offer the products at different prices. The objective is to find a tour that minimizes the cost of buying all the
-				products and the cost of visiting the selected markets. </p>
-
 			<p className="flex flex-col items-center sm:w-56 float-right sm:ml-4">
 				<img className="sm:w-56 h-48 " src="/images/tpp.png" alt="tpp" />
 				<p className="italic leading-relaxed font-light text-xs text-gray-700 mb-4 sm:mb-0">Fig 1. Different decisions for the TPP in a layered structure. Picture source: Manerba, D., Mansini, R., & Riera-Ledesma, J. (2017). The traveling purchaser problem and its variants. EJOR, 259(1), 1-18.</p>
 			</p>
+
+			<p className="leading-relaxed font-light mb-4 md:text-left ">The Traveling Purchaser Problem (TPP) considers a set of products to be purchased and a set
+				of markets that offer the products at different prices. The objective is to find a tour that minimizes the cost of buying all the
+				products and the cost of visiting the selected markets. </p>
+
 			<p className="leading-relaxed font-light mb-4">Formally, consider a depot , a set of markets, and a set
 			of products. The TPP can be defined on a graph where the set of nodes includes the depot and the markets (i.e.,),
 			and the set of arcs defines a complete graph (i.e., ). </p>
@@ -130,7 +131,7 @@ function ProjectDetail({ projects }) {
 
 	return (
 		<main className="overflow-auto">
-			<section className="sm:rounded sm:shadow-sm p-4 sm:mx-6 md:mx-10 lg:mx-40 2xl:mx-64 bg-white">
+			<section className="sm:rounded sm:shadow-sm p-4 sm:mx-6 md:mx-10 bg-white lg:mx-40 2xl:mx-64">
 				<article className="">
 					<p className="text-5xl mt-24 md:mt-32 mb-4">Traveling Purchased Problem</p>
 					<p className="mx-1 italic leading-relaxed font-light text-xs text-gray-700 mb-6">
@@ -140,7 +141,10 @@ function ProjectDetail({ projects }) {
 					</p>
 
 					<Introduction />
+
+					<br />
 					<hr />
+
 					<Results />
 				</article>
 			</section>

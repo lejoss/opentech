@@ -39,7 +39,7 @@ function App() {
   //   localStorage.setItem('app', state);
   // }, [state])
 
-  const latestProjects = state.projects.list.filter((p, i) => i <= MAX_PROJECTS_TO_SHOW_IN_HOME ? true : false);
+  const latestProjects = state.projects.list && state.projects.list.length > 0 && state.projects.list.filter((p, i) => i <= MAX_PROJECTS_TO_SHOW_IN_HOME ? true : false);
   
   return (
     <div className="container min-h-full min-w-full">

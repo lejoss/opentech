@@ -8,9 +8,9 @@ function Introduction() {
 				of markets that offer the products at different prices. The objective is to find a tour that minimizes the cost of buying all the
 				products and the cost of visiting the selected markets. </p>
 
-			<p className="sm:w-56 float-right ml-4">
-				<img className="sm:w-56 h-auto bg-transparent" src="/images/tpp.png" alt="tpp" />
-				<p className="italic leading-relaxed font-light text-xs text-gray-700">Fig 1. Different decisions for the TPP in a layered structure. Picture source: Manerba, D., Mansini, R., & Riera-Ledesma, J. (2017). The traveling purchaser problem and its variants. EJOR, 259(1), 1-18.</p>
+			<p className="flex flex-col items-center sm:w-56 float-right sm:ml-4">
+				<img className="sm:w-56 h-48 " src="/images/tpp.png" alt="tpp" />
+				<p className="italic leading-relaxed font-light text-xs text-gray-700 mb-4 sm:mb-0">Fig 1. Different decisions for the TPP in a layered structure. Picture source: Manerba, D., Mansini, R., & Riera-Ledesma, J. (2017). The traveling purchaser problem and its variants. EJOR, 259(1), 1-18.</p>
 			</p>
 			<p className="leading-relaxed font-light mb-4">Formally, consider a depot , a set of markets, and a set
 			of products. The TPP can be defined on a graph where the set of nodes includes the depot and the markets (i.e.,),
@@ -65,8 +65,8 @@ function Results() {
 			<table className="table-fixed bg-white shadow-sm rounded-md w-full">
 				<thead className="border-b">
 					<tr>
-						<th className="uppercase w-1/3 lg:w-1/2 p-4 ">Alternative GRASP ID</th>
-						<th className="uppercase w-2/3 lg:w-1/2 p-4 text-left">Description</th>
+						<th className="uppercase w-1/3 lg:w-1/2 p-4 font-medium">Alternative GRASP ID</th>
+						<th className="uppercase w-2/3 lg:w-1/2 p-4 text-left font-medium">Description</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -130,9 +130,9 @@ function ProjectDetail({ projects }) {
 
 	return (
 		<main className="overflow-auto">
-			<section className="rounded shadow-sm p-4  mx-6 sm:mx-6 md:mx-10 lg:mx-40 2xl:mx-64 bg-white">
+			<section className="sm:rounded sm:shadow-sm p-4 sm:mx-6 md:mx-10 lg:mx-40 2xl:mx-64 bg-white">
 				<article className="">
-					<p className="text-5xl md:mt-32 mb-4">Traveling Purchased Problem</p>
+					<p className="text-5xl mt-24 md:mt-32 mb-4">Traveling Purchased Problem</p>
 					<p className="mx-1 italic leading-relaxed font-light text-xs text-gray-700 mb-6">
 						This Web site is intended to be served as a supplement to the paper submitted:
 	Cuellar-Usaquen D, Gomez C and Álvarez-Martínez, D. A GRASP/Path-Relinking Algorithm for the Traveling PurchaserProblem
@@ -149,16 +149,3 @@ function ProjectDetail({ projects }) {
 }
 
 export default ProjectDetail;
-
-// <nav className="flex justify-between mx-2 sm:mx-6 md:mx-10 lg:mx-32 2xl:mx-64">
-// <Link to={`${url}/intro`} className="flex-1 m-1 p-1 text-center cursor-pointer uppercase text-gray-700 text-md rounded-sm border-gray-500 bg-gray-300">Introduction</Link>
-// <Link to={`${url}/desc`} className="flex-1 m-1 p-1 text-center cursor-pointer uppercase text-gray-700 text-md rounded-sm bg-gray-300">Description</Link>
-// <Link to={`${url}/res`} className="flex-1 m-1 p-1 text-center cursor-pointer uppercase text-gray-700 text-md rounded-sm bg-gray-300 active:bg-gray-700">Results</Link>
-// </nav>
-
-// <p className="text-center text-gray-700 font-bold mb-4">Traveling Purchaser Problem</p>
-// <Switch>
-// <Route path="/projects/1/intro" component={Introduction} />
-// <Route path="/projects/1/desc" component={Description} />
-// <Route path="/projects/1/res" component={Results} />
-// </Switch>

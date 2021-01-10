@@ -58,7 +58,7 @@ function Header() {
   }
 
   return (
-    <nav className="fixed z-10 h-16 w-full shadow-sm">
+    <nav className="bottom-0 md:bottom-auto fixed z-10 h-16 w-full shadow-sm">
       <div className="max-w-7xl h-full mx-auto px-4 sm:px-6 lg:px-12">
         <div className="h-full flex items-center justify-center lg:justify-end">
           <div className="md:ml-10 flex items-baseline space-x-4">

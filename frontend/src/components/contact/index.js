@@ -1,7 +1,6 @@
 export default function Contact() {
 	return (
-		<section style={{ backgroundColor: "#fafafa" }} id="contact" className="bg-white rounded shadow-sm px-12 sm:px-0 pb-6">
-
+		<section style={{ backgroundColor: "#fafafa" }} id="contact" className="rounded shadow-sm px-12 sm:px-0 pt-12 pb-32">
 			<div className="lg:mx-40 2xl:mx-64">
 				<p className="text-4xl mb-4 md:pt-6">Contact</p>
 				<div>

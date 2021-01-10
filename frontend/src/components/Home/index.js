@@ -5,9 +5,9 @@ import { mapToKeys } from '../../services'
 function RecentProjects(arr, people) {
 	if (arr.length > 0) {
 		return (
-			<section style={{ backgroundColor: "#eee" }} id="recent-projects" className="pb-10 px-12 sm:px-0 lg:mx-40 2xl:mx-64">
+			<section style={{ backgroundColor: "#eee" }} id="recent-projects" className="pb-10 px-12 sm:px-0 lg:mx-40 2xl:mx-64 sm:mx-10">
 				<p className="mb-6 pt-6 text-center md:text-left text-3xl sm:text-4xl">Recent Projects</p>
-				<div className="flex flex-col mx-6 sm:mx-0 md:justify-between sm:flex-row sm:flex-wrap">
+				<div className="flex flex-col mx-6 sm:mx-0 lg:justify-between sm:flex-row sm:flex-wrap sm:justify-center">
 					{arr.map(p => <ProjectCard people={people} key={p.id} project={p} />)}
 				</div>
 			</section>

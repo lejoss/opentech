@@ -119,8 +119,8 @@ function Results() {
 };
 
 const renderEndpointCuttingProblem = (
-	<main className="overflow-auto w-full">
-		<section className="sm:rounded sm:shadow-sm p-4 sm:mx-6 md:mx-10 bg-white lg:mx-40 2xl:mx-64">
+	<main className="overflow-auto max-w-screen-md m-auto">
+		<section className="sm:rounded sm:shadow-sm p-4 sm:mx-6 md:mx-10 bg-white">
 			<article className="">
 				<p className="text-5xl mt-12 md:mt-32 mb-4">Endpoint Cutting Problem</p>
 				<p className="mx-1 italic leading-relaxed font-light text-xs text-gray-700 mb-6">
@@ -193,13 +193,13 @@ function ResultsECP() {
 			<table className="table-fixed bg-white shadow-sm rounded-md w-full">
 				<thead className="border-b">
 					<tr>
-						<th className="uppercase w-1/7 lg:w-1/2 p-4 font-medium">CLASS</th>
-						<th className="uppercase w-1/7 lg:w-1/2 p-4 text-left font-medium">CUT EDGES</th>
-						<th className="uppercase w-1/7 lg:w-1/2 p-4 text-left font-medium">VERTEX</th>
-						<th className="uppercase w-1/7 lg:w-1/2 p-4 text-left font-medium">R COMPONENTS</th>
-						<th className="uppercase w-1/7 lg:w-1/2 p-4 text-left font-medium">QUANTITY</th>
-						<th className="uppercase w-1/7 lg:w-1/2 p-4 text-left font-medium">TYPES</th>
-						<th className="uppercase w-1/7 lg:w-1/2 p-4 text-left font-medium">TOTAL</th>
+						<th className="uppercase w-1/7 lg:w-1/2 py-4 font-medium text-xs">CLASS</th>
+						<th className="uppercase w-1/7 lg:w-1/2 py-4 text-left font-medium text-xs">CUT EDGES</th>
+						<th className="uppercase w-1/7 lg:w-1/2 py-4 text-left font-medium text-xs">VERTEX</th>
+						<th className="uppercase w-1/7 lg:w-1/2 py-4 text-left font-medium text-xs">R COMPONENTS</th>
+						<th className="uppercase w-1/7 lg:w-1/2 py-4 text-left font-medium text-xs">QUANTITY</th>
+						<th className="uppercase w-1/7 lg:w-1/2 py-4 text-left font-medium text-xs">TYPES</th>
+						<th className="uppercase w-1/7 lg:w-1/2 py-4 text-left font-medium text-xs">TOTAL</th>
 					</tr>
 				</thead>
 
@@ -276,8 +276,8 @@ function ProjectDetail({ projects }) {
 	}
 
 	return (
-		<main className="overflow-auto w-full">
-			<section className="sm:rounded sm:shadow-sm p-4 sm:mx-6 md:mx-10 bg-white lg:mx-40 2xl:mx-64">
+		<main className="overflow-auto max-w-screen-md m-auto">
+			<section className="sm:rounded sm:shadow-sm p-4 sm:mx-6 md:mx-10 bg-white">
 				<article className="">
 					<p className="text-5xl mt-12 md:mt-32 mb-4">Traveling Purchased Problem</p>
 					<p className="mx-1 italic leading-relaxed font-light text-xs text-gray-700 mb-6">

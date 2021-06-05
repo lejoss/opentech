@@ -1,8 +1,8 @@
 export default function Contact() {
 	return (
 		<section style={{ backgroundColor: "#fafafa" }} id="contact" className="rounded shadow-sm px-12 pt-12 pb-32 md:pb-12">
-			<div className="lg:mx-40 2xl:mx-64">
-				<p className="text-4xl mb-4 md:pt-6">Contact</p>
+			<div className="lg:text-lg">
+				<p className="mb-4 md:pt-6 font-bold uppercase">Contact</p>
 				<div>
 					<div className="flex">
 						<img className="mr-4" src="/images/person.svg" alt="david" />

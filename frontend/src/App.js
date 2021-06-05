@@ -10,6 +10,8 @@ import {
 } from "react-router-dom";
 import { mapToKeys } from './services';
 
+import axios from 'axios'
+
 const initialState = {
   home: {},
   people: {},
@@ -17,7 +19,7 @@ const initialState = {
   contact: {},
 };
 
-const MAX_PROJECTS_TO_SHOW_IN_HOME = 2;
+const MAX_PROJECTS_TO_SHOW_IN_HOME = 3;
 
 function initializeApp() {
   return JSON.parse(localStorage.getItem('app')) || initialState;
@@ -26,13 +28,17 @@ function initializeApp() {
 function App() {
   let [state, setState] = useState(initializeApp);
 
-  useEffect(() => {
-    fetch('data/api.json')
-      .then(response => response.json())
-      .then(data => {
-        setState(data);
-        localStorage.setItem('app', JSON.stringify(data));
-      });
+  useEffect(async () => {
+    axios.get('data/api.json').then(response => {
+      if (!response || !response.data) {
+        return {}
+      } else {
+        setState(response.data);
+        localStorage.setItem('app', JSON.stringify(response.data));
+        return response.data
+      }
+    })
+
   }, [])
 
   // useEffect(() => {
@@ -40,13 +46,13 @@ function App() {
   // }, [state])
 
   const latestProjects = state.projects.list && state.projects.list.length > 0 && state.projects.list.filter((p, i) => i <= MAX_PROJECTS_TO_SHOW_IN_HOME ? true : false);
-  
+
   return (
     <div className="container min-h-full min-w-full">
       <Header />
       <Switch>
         <Route exact path="/">
-            <Home latestProjects={latestProjects} people={state.people.list} />
+          <Home latestProjects={latestProjects} people={state.people.list} />
         </Route>
         <Route exact path="/people">
           <PeopleView people={state.people} />

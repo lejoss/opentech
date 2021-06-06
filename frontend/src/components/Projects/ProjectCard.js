@@ -9,9 +9,9 @@ function displayAuthors(peopleIds, peopleMap) {
 
 function ProjectCard({ project, people = null }) {
 	return (
-		<figure className="flex flex-col sm:mr-2 mb-2 bg-white sm:w-5/12 lg:w-48 shadow-sm rounded-md lg: px-1">
+		<figure className="flex flex-col sm:mr-2 mb-2 py-2 bg-white sm:w-5/12 lg:w-48 shadow-md rounded-md">
 			<img className="sm:w-48 my-0 mx-auto h-32 lg:h-32 lg:w-32 lg:p-2" src={project.img || "/images/broken_image.svg"} alt="tpp" />
-			<p className="px-4 break-all lg:text-sm mt-4 font-bold uppercase">{project.title || ''}</p>
+			<p className="px-2 break-words lg:text-sm mt-4 font-bold uppercase text-center">{project.title || ''}</p>
 			{people
 				? <div className="px-4 flex flex-1 flex-wrap mt-2">{displayAuthors(project.people, people)}</div>
 				: <p className="px-4 flex-1 font-light mt-2 text-xs">{project.description || ''}</p>

@@ -6,7 +6,7 @@ function RecentProjects(arr, people) {
 	if (arr.length > 0) {
 		return (
 			<section id="recent-projects" className="pb-10 px-12 lg:m-0 sm:px-0 sm:mx-10">
-				<p className="text-center text-5xl lg:text-left mt-10 mb-8 md:mb-6 m-auto">Recent Projects</p>
+				<p className="text-center text-4xl lg:text-left mt-10 mb-8 md:mb-6 m-auto">Recent Projects</p>
 				<div className="flex flex-col mx-6 sm:mx-0 lg:justify-start sm:flex-row sm:flex-wrap sm:justify-center">
 					{arr.map(p => <ProjectCard people={people} key={p.id} project={p} />)}
 				</div>

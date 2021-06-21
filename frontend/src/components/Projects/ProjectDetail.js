@@ -122,7 +122,7 @@ const renderEndpointCuttingProblem = (
 	<main className="overflow-auto max-w-screen-md m-auto">
 		<section className="sm:rounded sm:shadow-sm p-4 sm:mx-6 md:mx-10 bg-white">
 			<article className="">
-				<p className="text-5xl mt-12 md:mt-32 mb-4">Endpoint Cutting Problem</p>
+				<p className="text-5xl mt-12 md:mt-32 mb-4 text-center lg:text-left">Endpoint Cutting Problem</p>
 				<p className="mx-1 italic leading-relaxed font-light text-xs text-gray-700 mb-6">
 					This website is intended to be served as a supplement to the paper submitted: Cuellar-Usaquen D., Palacio A., Ospina E., Botero M., and Álvarez-Martínez, D. “Modeling and solving the endpoint cutting problem” whose text is available in PDF and PS formats. We provide here all the results and the description solutions that we have obtained by the MIPs and the Algorithm GRASP in our experiments. Below there is a brief description of the problem we consider in this work.
 				</p>
@@ -253,7 +253,7 @@ function ResultsECP() {
 				</tbody>
 			</table>
 			
-			<p className="text-5xl mt-12 md:mt-32 mb-4">References</p>
+			<p className="text-5xl mt-12 md:mt-32 mb-4 text-center lg:text-left">References</p>
 		
 			<p className="leading-relaxed font-light mb-4">
 				Birgin, E.G., Lobato, R.D., Morabito, R., 2012.  Generating unconstrained two-dimensional non-guillotine cutting patterns by a recursive partitioning algorithm. Journal of the Operational Research Society, 63, 2, 183–200.
@@ -279,7 +279,7 @@ function ProjectDetail({ projects }) {
 		<main className="overflow-auto max-w-screen-md m-auto">
 			<section className="sm:rounded sm:shadow-sm p-4 sm:mx-6 md:mx-10 bg-white">
 				<article className="">
-					<p className="text-5xl mt-12 md:mt-32 mb-4">Traveling Purchased Problem</p>
+					<p className="text-5xl mt-12 md:mt-32 mb-4 text-center lg:text-left">Traveling Purchased Problem</p>
 					<p className="mx-1 italic leading-relaxed font-light text-xs text-gray-700 mb-6">
 						This Web site is intended to be served as a supplement to the paper submitted:
 	Cuellar-Usaquen D, Gomez C and Álvarez-Martínez, D. A GRASP/Path-Relinking Algorithm for the Traveling PurchaserProblem

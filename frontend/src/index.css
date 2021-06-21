@@ -6,6 +6,10 @@
 }
 @tailwind utilities;
 
+html {
+	zoom: 80%;
+}
+
 body {
 	color: #1a202c;
 	/* background-color: #eee; */
